@@ -98,9 +98,15 @@ Digital_Signal_Analyzer/
 
 ## Installation
 
-1. Clone or download the project.
+1. Clone the repository.
+```bash
+git clone https://github.com/basit-ali-22/Digital_Signal_Analyzer.git
+```
 
-2. Open the project  folder in VS Code
+2. Navigate to the project directory
+```bash
+cd Digital_Signal_Analayzer
+```
 
 3. Install the required libraries:
 
