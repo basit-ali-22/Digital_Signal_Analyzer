@@ -1,16 +1,17 @@
 # DIGITAL SIGNAL ANALYZER
-A VLSI-oriented "Digital Signal Analyzer" project built using Python, Numpy, Pandas and Matplotlib. 
+A VLSI-oriented "Digital Signal Analyzer" project built using Python, NumPy, Pandas and Matplotlib. 
+
 The Digital Signal Analyzer generates digital signals, analyzes their properties and then plots the clock, reset, and data waveforms in the form of graphs.
 
 ## Features
 - Generates clock signal
 - Generates reset signal
-- Generate data signal
-- Analyze LOW and HIGH counts
+- Generates data signal
+- Analyze HIGH and LOW counts
 - Calculate duty cycle
 - Detect rising and falling edges 
 - Plots digital waveforms
-- Export siignal data to CSV
+- Export signal data to CSV
 - Export signal statistics to CSV
 - Save waveform as PNG image
 
@@ -21,23 +22,26 @@ The Digital Signal Analyzer generates digital signals, analyzes their properties
 - Matplotlib
 
 ## Project Structure
-Digital SigNAL Analyzer/
-|
-|--- main.py
-|---signal_generator.py
-|---analyzer.py
-|---plotter.py
-|
-|---data/
-|    |---signal.csv
-|    |---statistics.csv
-|
-|---images/
-|    |---waveform.png
-|
-|---README.md
-|---requirements.txt
-|---.gitignore
+
+```text
+Digital_Signal_Analyzer/
+│
+├── main.py
+├── signal_generator.py
+├── analyzer.py
+├── plotter.py
+│
+├── data/
+│   ├── signal.csv
+│   └── statistics.csv
+│
+├── images/
+│   └── waveform.png
+│
+├── README.md
+├── requirements.txt
+└── .gitignore
+```
 
 ## How it works
 
@@ -64,6 +68,7 @@ Digital SigNAL Analyzer/
 
 ### Signal Statistics
 
+```text
 +--------+------+-----+------------+--------------+---------------+
 | Signal | HIGH | LOW | Duty Cycle | Rising Edges | Falling Edges |
 +--------+------+-----+------------+--------------+---------------+
@@ -71,12 +76,77 @@ Digital SigNAL Analyzer/
 | Reset  |  4   |  6  |    40%     |      0       |       1       |
 |  Data  |  6   |  4  |    60%     |      3       |       2       |
 +--------+------+-----+------------+--------------+---------------+
+```
 
 ## Project Screenshots 
 
 ### Waveform 
 
-~~~~~~
+<img src="images/waveform.png" width="700">
 
-images/waveform.png
+### Statistics CSV
 
+<img src="images/statistics_csv.jpg" width="700">
+
+### Signal CSV
+
+<img src="images/signal_csv.jpg" width="500">
+
+### Terminal Output
+
+<img src="images/terminal_output.jpg" width="700">
+
+## Installation
+
+1. Clone or download the project.
+
+2. Open the project  folder in VS Code
+
+3. Install the required libraries:
+
+```bash
+pip install -r requirements.txt
+```
+
+4. Run the project:
+
+```bash
+python main.py
+```
+
+## Generated Files
+
+Running `python main.py` automatically creates the following files:
+
+``` 
+data/
+|---signal.csv
+|---statistics.csv
+
+images/
+|---waveform.png
+```
+
+## Skills Demonstrated
+- Python Programming
+- Numpy Array Operations
+- Pandas Data Processing
+- Matplotlib Visualization
+- CSV File Handling
+- Digital Signal Generation
+- Digital Signal Analysis
+- Modular Programming
+
+## Author
+
+**Basit Ali**
+
+Electronics and Communication Engineering Student
+
+Interested in:
+- VLSI Design
+- Digital Design
+- Embedded Systems
+- Python for Hardware Applications
+
+Github: [Basit Ali](https://github.com/basit-ali-22)
